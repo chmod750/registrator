@@ -1,25 +1,14 @@
 # Registrator
 
-Service registry bridge for Docker.
-
-[![Circle CI](https://circleci.com/gh/gliderlabs/registrator.png?style=shield)](https://circleci.com/gh/gliderlabs/registrator)
-[![Docker pulls](https://img.shields.io/docker/pulls/gliderlabs/registrator.svg)](https://hub.docker.com/r/gliderlabs/registrator/)
-[![IRC Channel](https://img.shields.io/badge/irc-%23gliderlabs-blue.svg)](https://kiwiirc.com/client/irc.freenode.net/#gliderlabs)
-<br /><br />
-
-Registrator automatically registers and deregisters services for any Docker
-container by inspecting containers as they come online. Registrator
-supports pluggable service registries, which currently includes
-[Consul](http://www.consul.io/), [etcd](https://github.com/coreos/etcd) and
-[SkyDNS 2](https://github.com/skynetservices/skydns/).
+Service registry bridge for Docker for ARM.
 
 Full documentation available at http://gliderlabs.com/registrator
 
 ## Getting Registrator
 
-Get the latest release, master, or any version of Registrator via [Docker Hub](https://registry.hub.docker.com/u/gliderlabs/registrator/):
+Get the latest release, master, or any version of Registrator via [Docker Hub](https://registry.hub.docker.com/u/chmod750/registrator/):
 
-	$ docker pull gliderlabs/registrator:latest
+	$ docker pull chmod750/registrator:latest
 
 Latest tag always points to the latest release. There is also a `:master` tag
 and version tags to pin to specific releases.
@@ -36,7 +25,7 @@ Guide. Typically, running Registrator looks like this:
         --name=registrator \
         --net=host \
         --volume=/var/run/docker.sock:/tmp/docker.sock \
-        gliderlabs/registrator:latest \
+        chmod750/registrator:latest \
           consul://localhost:8500
 
 ## CLI Options
@@ -59,21 +48,7 @@ Usage of /bin/registrator:
 ## Contributing
 
 Pull requests are welcome! We recommend getting feedback before starting by
-opening a [GitHub issue](https://github.com/gliderlabs/registrator/issues) or
-discussing in [Slack](http://glider-slackin.herokuapp.com/).
-
-Also check out our Developer Guide on [Contributing
-Backends](https://gliderlabs.com/registrator/latest/dev/backends) and [Staging
-Releases](https://gliderlabs.com/registrator/latest/dev/releases).
-
-## Sponsors and Thanks
-
-Big thanks to Weave for sponsoring, Michael Crosby for
-[skydock](https://github.com/crosbymichael/skydock), and the Consul mailing list
-for inspiration.
-
-For a full list of sponsors, see
-[SPONSORS](https://github.com/gliderlabs/registrator/blob/master/SPONSORS).
+opening a [GitHub issue](https://github.com/chmod750/registrator/issues).
 
 ## License
 
