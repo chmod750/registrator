@@ -6,7 +6,7 @@ Full documentation available at http://gliderlabs.com/registrator
 
 ## Getting Registrator
 
-Get the latest release, master, or any version of Registrator via [Docker Hub](https://registry.hub.docker.com/u/chmod750/registrator/):
+Get the latest release, master, or any version of Registrator via [Docker Hub](https://registry.hub.docker.com/r/chmod750/registrator):
 
 	$ docker pull chmod750/registrator:latest
 
